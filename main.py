@@ -21,7 +21,7 @@ def parse_args():
     return parser.parse_args()
 
 
-if __name__ == '__main__':
+def main():
     args = parse_args()
     np.set_printoptions(linewidth=args.array_linewidth, threshold=args.array_threshold)
 
@@ -42,3 +42,7 @@ if __name__ == '__main__':
             sep='\n'
         )
     print(land.convert_to_array())
+
+
+if __name__ == '__main__':
+    main()
