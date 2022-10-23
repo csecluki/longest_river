@@ -12,11 +12,11 @@ def parse_args():
     parser.add_argument('width', type=int, help="Width of array. ")
     parser.add_argument('height', type=int, help="Height of array. ")
     parser.add_argument('-l', '--array-linewidth', type=int, required=False, default=100,
-                        help="Number of chars in one row of printed array (keep in mind that that's not the same as"
+                        help="Number of chars in one row of printed array (keep in mind that that's not the same as "
                              "maximum number of objects in row. ")
     parser.add_argument('-t', '--array-threshold', type=int, required=False, default=1000,
                         help="Maximum number of printed array elements (rows x columns). ")
-    parser.add_argument('--hide-stats', action='store_true')
+    parser.add_argument('--hide-stats', action='store_true', help="Do not show execution statistics. ")
     parser.set_defaults(hide_stats=False)
     return parser.parse_args()
 
