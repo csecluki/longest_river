@@ -2,7 +2,6 @@ import datetime
 from itertools import chain
 import random
 
-import numpy as np
 
 from field import Field
 from river import River
@@ -79,7 +78,6 @@ class Land:
 
 
 if __name__ == '__main__':
-    np.set_printoptions(linewidth=2000, threshold=100000)
     start = datetime.datetime.now()
     land = Land(15, 15)
     length, river_number = land.find_longest_river()

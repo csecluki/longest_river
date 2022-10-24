@@ -15,7 +15,7 @@ class Field:
 
     def __str__(self):
         color = self.get_repr_color()
-        return f"{color}{chr(9608)}{chr(9608)} {colorama.Fore.RESET}"
+        return f"{color}{chr(9608)}{chr(9608)}{colorama.Fore.RESET}"
 
     def get_repr_color(self):
         if not self.is_river:
