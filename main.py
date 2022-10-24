@@ -27,7 +27,7 @@ def main():
 
     start = time.process_time()
 
-    land = Land(args.height, args.width)
+    land = Land(args.width, args.height)
     land_created = time.process_time()
 
     length, river_number = land.find_longest_river()
@@ -41,7 +41,7 @@ def main():
             f"Longest river: {length}",
             sep='\n'
         )
-    print(land.convert_to_array())
+    print(land)
 
 
 if __name__ == '__main__':

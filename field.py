@@ -11,8 +11,11 @@ class Field:
         self.is_river = is_river
 
     def __repr__(self):
+        return f"Field at ({self.x}, {self.y})"
+
+    def __str__(self):
         color = self.get_repr_color()
-        return f"{color} {1 if self.is_river else 0}{colorama.Fore.RESET}"
+        return f"{color}{chr(9608)}{chr(9608)} {colorama.Fore.RESET}"
 
     def get_repr_color(self):
         if not self.is_river:
