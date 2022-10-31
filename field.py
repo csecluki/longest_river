@@ -11,7 +11,7 @@ class Field:
         self.is_river = is_river
 
     def __repr__(self):
-        return f"Field at ({self.x}, {self.y})"
+        return f"Field at ({self.x}, {self.y}); {'river' if self.is_river else 'land'}"
 
     def __str__(self):
         color = self.get_repr_color()

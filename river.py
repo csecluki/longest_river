@@ -6,6 +6,9 @@ class River(list):
     def __init__(self, initial_field: Field):
         super().__init__([initial_field])
 
+    def get_unchecked_river_elements(self):
+        return set(filter(lambda x: not x.checked, self))
+
     def set_as_checked(self):
         for field in self:
             field.checked = True
