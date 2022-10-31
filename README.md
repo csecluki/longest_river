@@ -22,4 +22,4 @@ Full option description you can find of course under:
 
 # To do / work in progress
 
-In future, I'm planning to add loading problem data from .csv file and/or in other way. Also implementing more algorithms is considered.
+In future, I'm planning to add loading problem data from ~~.csv file~~ and/or in other way. Also implementing more algorithms is considered.
