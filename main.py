@@ -8,9 +8,10 @@ from land import Land
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('width', type=int, help="Width of array. ")
-    parser.add_argument('height', type=int, help="Height of array. ")
+    parser.add_argument('-f', '--file-path', type=str, help=".csv file path with land data. If not specified random "
+                                                            "land will be generated. ")
     parser.add_argument('--hide-stats', action='store_true', help="Do not show execution statistics. ")
+    parser.add_argument('--hide-land', action='store_true', help="Do not show graphical representation of land. ")
     parser.set_defaults(hide_stats=False)
     return parser.parse_args()
 
@@ -20,7 +21,7 @@ def main():
 
     start = time.process_time()
 
-    land = Land(args.width, args.height)
+    land = Land(args.file_path)
     land_created = time.process_time()
 
     length, river_number = land.find_longest_river()
@@ -34,7 +35,9 @@ def main():
             f"Longest river: {length}",
             sep='\n'
         )
-    print(land)
+
+    if not args.hide_land:
+        print(land)
 
 
 if __name__ == '__main__':
