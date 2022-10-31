@@ -14,7 +14,7 @@ User receives as output in console colored rectangle, where red tiles represents
 
 `python3 main.py -f example_data/data.csv`
 
-![image](https://user-images.githubusercontent.com/49252352/199008685-ae877cc3-26fe-4363-b3f9-d836d94ec456.png)
+![image](https://user-images.githubusercontent.com/49252352/199008902-7e440bde-a042-493b-bb21-18d8edbe995e.png)
 
 Full option description you can find of course under:
 
