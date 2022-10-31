@@ -12,9 +12,9 @@ Program generates random area of given width and height filled with 'river' or '
 
 User receives as output in console colored rectangle, where red tiles represents land and blue ones - rivers. In addition, the longest river is marked in green, so user can easily spot where exactly it is placed. In addition, there are printed some basic statistics about processing time. As an example, here you can see output for command:
 
-`python3 main.py 40 40`
+`python3 main.py -f example_data/data.csv`
 
-![image](https://user-images.githubusercontent.com/49252352/197853753-9d43f459-67b8-47b0-a767-f3426ce31b4b.png)
+![image](https://user-images.githubusercontent.com/49252352/199008685-ae877cc3-26fe-4363-b3f9-d836d94ec456.png)
 
 Full option description you can find of course under:
 
