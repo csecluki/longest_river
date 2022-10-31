@@ -26,10 +26,10 @@ class Land:
 
     @staticmethod
     def generate_random_field_objects():
-        # x, y = random.randint(1, 50), random.randint(1, 50)
+        x, y = random.randint(1, 50), random.randint(1, 50)
         return [Field(i, j, random.choice((True, False)))
-                for j in range(200)
-                for i in range(200)]
+                for j in range(x)
+                for i in range(y)]
 
     def find_longest_river(self):
         while field := self.get_unchecked_field():
